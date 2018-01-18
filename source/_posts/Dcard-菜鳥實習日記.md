@@ -1,7 +1,7 @@
 ---
 title: Dcard 菜鳥實習日記
-date: 2018-01-19 00:08:02
-tags:
+date: 2017-08-02 14:49:00
+tags: [Diary, Dcard, Intern]
 ---
 
 ![](https://imgur.dcard.tw/vg17aC0.jpg)
