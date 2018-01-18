@@ -85,3 +85,6 @@ archive_generator:
   yearly: false
   monthly: false
   daily: false
+
+# Google Analytics
+ga_tracking_id: UA-61516445-10
