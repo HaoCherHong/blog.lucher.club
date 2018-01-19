@@ -88,3 +88,6 @@ archive_generator:
 
 # Google Analytics
 ga_tracking_id: UA-61516445-10
+
+# Facebook
+fb_app_id: 2311189928906991

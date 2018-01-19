@@ -8,7 +8,7 @@ if theme.duoshuo
             ds.type = 'text/javascript';ds.async = true;
             ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
             ds.charset = 'UTF-8';
-            (document.getElementsByTagName('head')[0] 
+            (document.getElementsByTagName('head')[0]
              || document.getElementsByTagName('body')[0]).appendChild(ds);
         })();
 
@@ -63,11 +63,14 @@ if theme.valine
         script.
           var valine = new Valine({
             el:'#vcomments',
-            notify:#{theme.valine.notify} || false, 
-            verify:#{theme.valine.verify}|| false, 
+            notify:#{theme.valine.notify} || false,
+            verify:#{theme.valine.verify}|| false,
             app_id:'#{theme.valine.appid}',
             app_key:'#{theme.valine.appkey}',
             placeholder:'#{theme.valine.placeholder}',
             path: window.location.pathname,
             avatar:'#{theme.valine.avatar}'
           })
+
+if theme.fb_app_id
+    include fbcomment
