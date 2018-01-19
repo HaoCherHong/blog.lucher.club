@@ -26,3 +26,8 @@ valine:
   avatar: mm # avatar style https://github.com/xCss/Valine/wiki/avatar-setting-for-valine
   placeholder: Just go go # comment box placeholder
 
+share:
+  evernote: true
+  weibo: true
+  twitter: true
+  facebook: true
