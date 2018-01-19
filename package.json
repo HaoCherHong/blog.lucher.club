@@ -6,7 +6,7 @@
     "version": "3.4.4"
   },
   "scripts": {
-    "deploy": "hexo generate && ssh $LINODE_ADDR \"rm -rf /root/blog.lucher.club-server/public\" && scp -r public $LINODE_ADDR:/root/blog.lucher.club-server/public"
+    "deploy": "rm -rf public && hexo generate && ssh $LINODE_ADDR \"rm -rf /root/blog.lucher.club-server/public\" && scp -r public $LINODE_ADDR:/root/blog.lucher.club-server/public"
   },
   "dependencies": {
     "hexo": "^3.2.0",
