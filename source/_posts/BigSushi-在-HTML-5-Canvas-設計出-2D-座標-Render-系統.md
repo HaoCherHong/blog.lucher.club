@@ -21,7 +21,7 @@ tags: [Dev, BigSushi]
 -   Rotation / AbsoluteRotation (相對旋轉 / 絕對旋轉)
 -   Scale / AbsoluteScale (相對縮放 / 絕對縮放)
 
-絕對是指GameObject相對整個世界原點的值，而相對則是它相對於其Parent的值。例如**你在我右邊7公尺（你對我的相對 x 是1m）**，而我在世界原點（？）的**右邊9410公尺**，所以**你的絕對位置就是 x: 9417m**。\
+絕對是指GameObject相對整個世界原點的值，而相對則是它相對於其Parent的值。例如**你在我右邊7公尺（你對我的相對 x 是1m）**，而我在世界原點（？）的**右邊9410公尺**，所以**你的絕對位置就是 x: 9417m**。
 座標、旋轉及縮放都是直接以相對位置儲存的，而他們的絕對數值則是透過計算計算出來的（這對我來說有點違反直覺，不過由於這個Framework原本就是存相對座標，所以我就沿用了）。
 
 計算旋轉與縮放比起座標簡單的多，我先來說說絕對的旋轉與縮放是怎麼計算的。
@@ -34,7 +34,7 @@ tags: [Dev, BigSushi]
 
 #### **絕對縮放的計算**
 
-縮放跟旋轉幾乎一樣，就是 + 變成 *（乘） 而已。\
+縮放跟旋轉幾乎一樣，就是 + 變成 *（乘） 而已。
 **絕對旋轉的算法是 GameObject的相對縮放 * 其Parent的絕對縮放**。
 
 *absoluteScale = relativeScale * parent.absoluteScale*
@@ -57,7 +57,7 @@ Camera的概念是，把所有GameObject的位置，透過其相對一個 Camera
 
 GameObject在螢幕位置的計算是這樣的：
 
-*x = gameObject.absoluteX - camera.x + Screen.width / 2*\
+*x = gameObject.absoluteX - camera.x + Screen.width / 2*
 *y = gameObject.absoluteY - camera.y + Screen.height / 2*
 
 其實就是GameObject跟camera的相對位置而已。 由於我們在繪圖時會希望以Camera為中心繪圖。所以假設GameObject跟camera在同一點上，它其實應該在螢幕的中間而非 x: 0, y: 0的位子上，所以我們在 x 跟 y 上分別加上 螢幕寬度 / 2 與 螢幕高度 / 2 。
@@ -86,9 +86,6 @@ Canvas的繪圖，首先要知道的是：
 那旋轉怎麼辦呢？Canvas 有個旋轉函數可以使用：
 
 *context.rotate(angle)*
-
-*\
-*
 
 在繪圖之前執行這項指令設定好angle後（注意 angle 是徑度，所以要先轉換哦），接下來畫的東西都會旋轉這個角度囉！
 

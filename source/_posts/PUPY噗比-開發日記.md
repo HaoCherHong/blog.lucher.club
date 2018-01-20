@@ -21,7 +21,7 @@ PUPY噗比(<https://pupy.tw/>) 是一個2015年我跟我的好朋友開始一起
 
 如前文所述，寫這篇文章的時候，給電腦版的網頁早就做好了，但是手機板的網頁因為各種原因遲遲沒有出來。為了不要讓網頁難產，也讓以後開發網頁更快速更有系統，我開始學習用React.js來做前端，[Node.js](https://nodejs.org/)來做後端。不過這樣說有點太簡略，這邊先來寫寫整個環境。
 
-React.js使用一個叫做JSX的JS擴充語言，用來更快速的表示React的Component。這當然不是瀏覽器原生支援的語言，所以要先經過[babel](https://babeljs.io/)編譯才能在瀏覽器正常使用。\
+React.js使用一個叫做JSX的JS擴充語言，用來更快速的表示React的Component。這當然不是瀏覽器原生支援的語言，所以要先經過[babel](https://babeljs.io/)編譯才能在瀏覽器正常使用。
 在React裡面又有很多地方需要用到ES6, ES7的功能，寫起來才會比較簡潔快速，所以也是要經過babel編譯回ES5。目前前端沒有用太多額外的Library，所以大概就先這樣。
 
 後端的話如剛剛說到的是用Node.js來寫，而資料庫則是使用[MongoDB](https://www.mongodb.com/)（因為他的資料儲存格式可以讓開發很方便快速）。網頁伺服器是用很流行的[express.js](http://expressjs.com/) Module。為了解決JS Callback Hell的問題，我前陣子花了時間把幾乎所有的Async Call都改寫成Promise的作法，搭配ES7的Async, Await語法，整個寫起來變得非常的乾淨。這邊很多東西也是Node.js還沒有完全支援的，所以我也是乾脆都透過babel把他編譯回ES5來執行。
