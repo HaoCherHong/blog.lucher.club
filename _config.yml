@@ -5,10 +5,20 @@
 # Site
 title: 魯記
 subtitle: blog.lucher.club
-description: 紀錄一些自己開發的大小事
-author: Hao-Cher Hong
+description: Drunk is the new black.
+avatar: /images/portrait.png
+author: Hao-Cher Hong,rax333j@gmail.com
+keywords: lucher,haocherhong,haocher,blog,development,unity,nodejs,pupy
 language: zh-Hant-TW
 timezone: Asia/Taipei
+
+# Social Accounts
+twitter:
+rss:
+weibo:
+instagram: haocherhong
+github: haocherhong
+facebook: haocherhong
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -85,6 +95,12 @@ archive_generator:
   yearly: false
   monthly: false
   daily: false
+
+share:
+  evernote: false
+  weibo: false
+  twitter: false
+  facebook: true
 
 # Google Analytics
 ga_tracking_id: UA-61516445-10
