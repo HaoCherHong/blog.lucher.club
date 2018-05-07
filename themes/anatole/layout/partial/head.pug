@@ -1,16 +1,20 @@
+//- Definitions
+block def_site_title
+    - var siteTitle = config.title;
+block def_description
+    - var description = config.description ? config.description : 'A Blog Powered By Hexo';
+block def_keywords
+    - var keywords = page.keywords || theme.keywords;
+
+//-
+
+title
+    = siteTitle
+
 meta(charset="utf-8")
 meta(name="X-UA-Compatible", content="IE=edge")
 meta(name="author", content= theme.author)
-title
-    block site_title
-        = config.title
-block description
-    meta(name="description", content= config.description ? config.description : 'A Blog Powered By Hexo')
-
-if page.keywords
-    meta(name="keywords", content= page.keywords)
-else
-    meta(name="keywords" content= theme.keywords)
+meta(name="keywords", content=keywords)
 
 meta(content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0",name="viewport")
 meta(content="yes",name="apple-mobile-web-app-capable")
@@ -24,4 +28,20 @@ link(rel="stylesheet", href= url_for('css/blog_basic.css'))
 link(rel="stylesheet", href= url_for('css/font-awesome.min.css'))
 link(rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml")
 
+//- Open Graph
+meta(property="fb:app_id", content=config.fb_app_id)
+block ogType
+    meta(property="og:type", content="website")
+block ogTitle
+    meta(property="og:title", content=siteTitle)
+block ogDescription
+    meta(property="og:description", content=description)
+block ogImage
+    - var url = `${config.url}/${config.logo}`;
+    meta(property="og:image", content=url)
+block ogUrl
+    - var url = `${config.url}/${page.path}`;
+    meta(property="og:url", content=url)
+
+//- Google Analytics
 include ga
