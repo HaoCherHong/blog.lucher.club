@@ -1,9 +1,9 @@
 extends partial/layout
 
-block site_title
+block def_site_title
     != page.category + " · " + config.title
 
-block description
+block def_description
     - var desc = `${__('Categories')}：${page.category} - ${config.title}`;
     meta(name="description", content=desc)
 

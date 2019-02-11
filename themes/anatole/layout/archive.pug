@@ -1,9 +1,9 @@
 extends partial/layout
 
-block site_title
+block def_site_title
     !=  `${__('Archive')} · ${config.title}`
 
-block description
+block def_description
     - var desc = `${__('Archive')} - ${config.title}`;
     meta(name="description", content=desc)
 
