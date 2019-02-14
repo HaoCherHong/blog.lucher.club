@@ -228,6 +228,10 @@ a:hover, a:active {
   color: #4786D6;
 }
 
+.sidebar .logo-img {
+  border-radius: 50%;
+}
+
 .post {
   background-color: #FFF;
   margin: 30px;
