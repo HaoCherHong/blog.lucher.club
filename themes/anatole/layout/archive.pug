@@ -1,11 +1,10 @@
 extends partial/layout
 
 block def_site_title
-    !=  `${__('Archive')} · ${config.title}`
+    - var siteTitle = `${__('Archive')} · ${config.title}`
 
 block def_description
-    - var desc = `${__('Archive')} - ${config.title}`;
-    meta(name="description", content=desc)
+    - var description = `${__('Archive')} - ${config.title}`;
 
 block content
     .autopagerize_page_element: .content

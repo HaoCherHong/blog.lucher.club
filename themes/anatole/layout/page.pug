@@ -1,11 +1,10 @@
 extends partial/layout
 
 block def_site_title
-    != page.title + " · " + config.title
+    - var siteTitle = page.title + " · " + config.title;
 
 block def_description
-    - var desc = page.desc || strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150);
-    meta(name="description", content=desc)
+    - var description = page.desc || strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150);
 
 block content
   .autopagerize_page_element: .content: .post-page
