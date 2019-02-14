@@ -3,6 +3,9 @@ title: BigSushi - 在 HTML 5 Canvas 設計出 2D 座標 Render 系統
 date: 2017-03-26 13:19:00
 tags: [dev, bigsushi]
 ---
+
+文／洪晧哲
+
 [![](https://3.bp.blogspot.com/-o9WkWOBeroY/WMgI6lBxFxI/AAAAAAAABEI/d36P8wXambcaYXfJOWr1eRICFO8nhdgkQCLcB/s400/Untitled.png)](https://3.bp.blogspot.com/-o9WkWOBeroY/WMgI6lBxFxI/AAAAAAAABEI/d36P8wXambcaYXfJOWr1eRICFO8nhdgkQCLcB/s1600/Untitled.png)
 
 這學期的物件導向程式設計實習課，老師要我們用實驗室做的HTML 5基本遊戲Framework做一款遊戲出來。這個Framework做出了基本的Game Loop，但有很多東西是不完整的。因為我之前長時間使用Unity遊戲引擎的關係，我看了Framework的基礎架構後馬上就想把他改到用起來跟Unity幾乎一樣。
