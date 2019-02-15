@@ -1,6 +1,6 @@
 //- Definitions
 block def_site_title
-    - var siteTitle = config.title;
+    - var siteTitle = null;
 block def_description
     - var description = config.description ? config.description : 'A Blog Powered By Hexo';
 block def_keywords
@@ -8,8 +8,10 @@ block def_keywords
 
 //-
 
+- var title = siteTitle ? `${siteTitle} - ${config.title}` : config.title;
+
 title
-    = siteTitle
+    = title
 
 meta(charset="utf-8")
 meta(name="X-UA-Compatible", content="IE=edge")

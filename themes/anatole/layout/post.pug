@@ -3,7 +3,7 @@ extends partial/layout
 include mixins
 
 block def_site_title
-  - var siteTitle = page.title + " · " + config.title;
+  - var siteTitle = page.title;
 
 block def_description
   - var description = page.desc || strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150);
