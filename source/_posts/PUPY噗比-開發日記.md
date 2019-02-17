@@ -1,7 +1,7 @@
 ---
 title: PUPY噗比 開發日記
 date: 2017-02-5 09:25:00
-tags: [pupy, dev, react, angular]
+tags: [pupy, dev, react, angular, 開發]
 ---
 
 文／洪晧哲

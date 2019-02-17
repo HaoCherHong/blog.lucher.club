@@ -1,7 +1,7 @@
 ---
 title: BigSushi - 在 HTML 5 Canvas 設計出 2D 座標 Render 系統
 date: 2017-03-26 13:19:00
-tags: [dev, bigsushi]
+tags: [dev, bigsushi, 實習]
 ---
 
 文／洪晧哲
