@@ -40,8 +40,14 @@ block ogTitle
 block ogDescription
     meta(property="og:description", content=description)
 block ogImage
-    - var url = `${config.url}/${config.logo}`;
-    meta(property="og:image", content=url)
+    if page.images
+        - page.images.forEach(image => {
+            - var url = /^https?:\/\//.test(image) ? image : `${config.url}${image}`;
+            meta(property="og:image", content=url)
+        - });
+    else
+        - var url = `${config.url}${config.logo}`;
+        meta(property="og:image", content=url)
 block ogUrl
     - var url = `${config.url}/${page.path}`;
     meta(property="og:url", content=url)

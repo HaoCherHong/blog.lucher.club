@@ -2,6 +2,7 @@
 title: Dcard 菜鳥實習日記
 date: 2017-08-02 14:49:00
 tags: [diary, dcard, intern]
+images: [https://imgur.dcard.tw/vg17aC0.jpg, https://imgur.dcard.tw/VXAEIZ8.jpg, https://imgur.dcard.tw/37cIQTU.jpg, https://imgur.dcard.tw/ohcQYX9.jpg]
 ---
 
 文／洪晧哲
