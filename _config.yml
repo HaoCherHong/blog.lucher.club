@@ -4,15 +4,17 @@
 
 # Site
 title: 魯記
-subtitle: blog.lucher.club
-slogan: Stupid is the new black.
-description: 魯哲的日記；洪晧哲的部落格
+subtitle: Hao-Cher Hong's Blog
+slogan:
+description: <span>Hao-Cher Hong</span>'s Blog<br/><span>洪晧哲</span>的部落格
 avatar: /images/portrait-1024.jpg
 logo: /images/portrait-1024.jpg
 author: 洪晧哲,Hao-Cher Hong,rax333j@gmail.com
 keywords: 洪晧哲,魯記,魯哲,lucher,haocherhong,haocher,blog,development,unity,nodejs,pupy
 language: zh-Hant-TW
 timezone: Asia/Taipei
+username: haocherhong
+post_header: 文／洪晧哲 (Hao-Cher Hong)
 
 # Social Accounts
 twitter:

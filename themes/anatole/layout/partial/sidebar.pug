@@ -1,15 +1,15 @@
 .sidebar.animated.fadeInDown
   .logo-title
     .title
-      img(class="logo-img",src= url_for(config.logo),style="width:127px;")
+      img(class="logo-img", src= url_for(config.logo), style="width:127px;", alt=config.username)
       h3(title="")
         a(href="/")= config.title
-      if theme.slogan
+      if config.slogan
         .description
-          p= theme.slogan
-      if theme.description
+          p= config.slogan
+      if config.description
         .description
-          p= theme.description
+          p !{config.description}
 
   ul.social-links
     if theme.twitter
