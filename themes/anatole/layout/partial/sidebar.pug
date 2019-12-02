@@ -15,29 +15,37 @@
     if theme.twitter
       li
         a(href="https://twitter.com/" + theme.twitter)
-          i.fa.fa-twitter
+          i.fa.fa-twitter(title=alt=config.alt_name + '的Twitter')
     if theme.instagram
       li
         a(href="https://instagram.com/" + theme.instagram)
-          i.fa.fa-instagram
+          i.fa.fa-instagram(title=alt=config.alt_name + '的Instagram')
     if theme.weibo
       li
         a(href="https://weibo.com/" + theme.weibo)
-          i.fa.fa-weibo
+          i.fa.fa-weibo(title=alt=config.alt_name + '的微博')
     if theme.facebook
       li
         a(href="https://facebook.com/" + theme.facebook)
-          i.fa.fa-facebook
+          i.fa.fa-facebook(title=alt=config.alt_name + '的Facebook')
     if theme.github
       li
         a(href="https://github.com/" + theme.github)
-          i.fa.fa-github
+          i.fa.fa-github(title=alt=config.alt_name + '的GitHub')
     if theme.linkedin
       li
         a(href="https://www.linkedin.com/in/" + theme.linkedin)
-          i.fa.fa-linkedin-square
+          i.fa.fa-linkedin-square(title=alt=config.alt_name + '的LinkedIn')
+    if theme.portfolio
+      li
+        a(href=theme.portfolio)
+          i.fa.fa-file(title=alt=config.alt_name + '的作品集')
+    if theme.email
+      li
+        a(href="mailto:" + theme.email)
+          i.fa.fa-envelope(title=alt=config.alt_name + '的Email')
     if theme.rss
       li
         a(href= url_for(theme.rss))
-          i.fa.fa-rss
+          i.fa.fa-rss(title="RSS")
   include footer

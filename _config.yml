@@ -17,13 +17,16 @@ username: haocherhong
 post_header: 文／洪晧哲 (Hao-Cher Hong)
 
 # Social Accounts
+alt_name: 洪晧哲
 twitter:
-rss: /atom.xml
+# rss: /atom.xml
 weibo:
-instagram: haocherhong
+# instagram: haocherhong
 github: haocherhong
 facebook: haocherhong
 linkedin: haocherhong
+email: rax333j@gmail.com
+portfolio: https://portfolio.lucher.club/
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
