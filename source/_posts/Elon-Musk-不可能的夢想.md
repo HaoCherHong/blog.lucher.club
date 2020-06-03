@@ -2,7 +2,7 @@
 title: Elon Musk 不可能的夢想
 date: 2020-05-31 17:55:00
 tags: [diary]
-images: ['/2020/05/31//Elon-Musk-不可能的夢想/60_minutes_elon_musk.jpg.jpg']
+images: ['/2020/05/31//Elon-Musk-不可能的夢想/60_minutes_elon_musk.jpg']
 ---
 
 2002 年，Elon Musk（伊隆馬斯克） 創立了 SpaceX 太空探索公司，用了他上個事業成功的錢，去投資他不可能完成的夢想，降低太空旅行成本；殖民火星。
